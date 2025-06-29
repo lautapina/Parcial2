@@ -1,0 +1,277 @@
+/* IMPORTACIÓN DE FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&family=Prompt:wght@400;700&display=swap');
+
+/* GENERAL */
+body {
+  font-family: 'Prompt', sans-serif;
+  background-color: #0e0e10;
+  color: #eaeaea;
+  margin: 0;
+  text-align: center;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+section {
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+section.visible-section {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* HEADER */
+header {
+  background-color: #141416;
+  padding: 2rem 1rem;
+}
+
+header img {
+  max-height: 220px;
+  margin-bottom: 0.5rem;
+}
+
+header h1 {
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+}
+
+header h4 {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+  color: #bbbbbb;
+}
+
+/* BANNER */
+#bannerCanvas {
+  background-color: #0a0a0c;
+  padding: 0;
+}
+
+#bannerCanvas canvas {
+  display: block;
+  margin: 0 auto;
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* NOTA PRINCIPAL */
+#nota-principal {
+  padding: 4rem 1rem;
+}
+
+#nota-principal h2 {
+  color: #ffffff;
+}
+
+#nota-principal p {
+  max-width: 700px;
+  margin: 1rem auto;
+  font-size: 1.1rem;
+  color: #cccccc;
+  text-align: center;
+}
+
+/* INFO PASTILLAS */
+#info-pastillas {
+  background-color: #18181b;
+  padding: 4rem 1rem;
+  border-top: 1px solid #292929;
+  border-bottom: 1px solid #292929;
+}
+
+.pastilla-img {
+  width: 140px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.pastilla-img.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.card.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card.animate-on-scroll.visible:hover {
+  transform: translateY(0) scale(1.05);
+  z-index: 2;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+}
+
+.card.bg-dark {
+  background-color: #fdf6ed !important;
+  color: #1a1a1a !important;
+}
+
+.card.bg-dark .card-body {
+  color: #1a1a1a !important;
+}
+
+.card.bg-dark:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+/* SECCIONES DETALLADAS */
+#diseno-unico,
+#responsive {
+  padding: 4rem 1rem;
+  background-color: #1c1c1f;
+  color: #eaeaea;
+}
+
+#contenido-multimedia {
+  background-color: #f4f4f4;
+  color: #1e1e1e;
+  padding: 4rem 1rem;
+}
+
+#creatividad {
+  background-color: #ffffff;
+  color: #111111;
+}
+
+/* INTEGRANTES */
+#integrantes {
+  background-color: #131316;
+  padding: 4rem 1rem;
+  border-top: 1px solid #292929;
+}
+
+#integrantes h2,
+#integrantes h5,
+#integrantes p {
+  text-align: center;
+}
+
+#integrantes img {
+  border: 4px solid #ffffff33;
+  transition: transform 0.3s ease;
+  background-color: #ffffff10;
+}
+
+#integrantes img:hover {
+  transform: scale(1.05);
+}
+
+/* BLOQUE 3D */
+#bloque3d {
+  padding: 4rem 1rem;
+}
+
+#canvas3d-wrapper {
+  width: 100vw;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0 auto;
+  border-radius: 0 !important;
+}
+
+#canvas3d-wrapper canvas {
+  width: 100% !important;
+  height: auto !important;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00f2ff33;
+}
+
+/* ANIMACIÓN ON SCROLL */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* LISTA CON ESTRELLA */
+.star-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.star-list li::before {
+  content: "✴";
+  color: #ffc107;
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+a.text-decoration-none {
+  color: inherit;
+}
+
+a.text-decoration-none:hover {
+  color: inherit;
+}
+
+#bloque3d h2 {
+  text-transform: uppercase;
+  font-size: 2.8rem;
+  letter-spacing: 1px;
+  color: #ffffff;
+  padding: rem;
+}
+
+.redes-sociales a {
+  color: #cccccc;
+  text-decoration: none; /* ← Esto elimina el subrayado */
+  transition: color 0.3s ease;
+}
+
+.redes-sociales a:hover {
+  color: #ffc107;
+}
+.redes-sociales a {
+  color: #cccccc;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+  display: inline-block;
+}
+
+.redes-sociales a:hover {
+  transform: scale(1.3);
+  color: #ffc107; /* opcional: cambia de color al hacer hover */
+}

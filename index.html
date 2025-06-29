@@ -1,1 +1,287 @@
-<h1>Parcial 2 Test</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Laut Medial</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- LINKS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- P5.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
+</head>
+<body>
+
+    <header class="bg-dark text-white text-center py-1">
+        <img src="img/logo.png" alt="Laut Medial Logo" height="320">
+    </header>
+
+  <!-- Banner con partículas -->
+  <section id="bannerCanvas" class="text-center"></section>
+
+  <main class="container-fluid px-0">
+
+    <!-- Nota principal -->
+    <section id="nota-principal" class="mb-5 px-4">
+        <h2 class="typewriter-title">Bienvenidos a nuestra agencia</h2><br>
+        <p class="typewriter-text">Nos especializamos en diseño multimedia y soluciones creativas...</p>
+      </section>
+      
+      
+
+    <section id="info-pastillas" class="container-fluid my-5 px-4">
+        <h2 class="text-center mb-5 animate-on-scroll">¿Por qué elegir Laut Medial?</h2>
+        <div class="row text-center">
+ <!-- Pastilla 1 -->
+ <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 mb-4">
+   <a href="#diseno-unico" class="text-decoration-none">
+     <div class="card bg-dark text-white border-0 h-100 shadow-sm animate-on-scroll">
+       <div class="card-body p-4 text-white">
+         <img src="img/pastillas/pastilla1.png" alt="Diseño" class="mb-4 pastilla-img animate-on-scroll">
+         <h4 class="card-title animate-on-scroll">Diseño único</h4>
+         <p class="card-text fs-6">Creamos piezas visuales auténticas y modernas.</p>
+       </div>
+     </div>
+   </a>
+ </div>
+ <!-- Pastilla 2 -->
+ <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 mb-4">
+   <a href="#contenido-multimedia" class="text-decoration-none">
+     <div class="card bg-dark text-white border-0 h-100 shadow-sm animate-on-scroll">
+       <div class="card-body p-4 text-white">
+         <img src="img/pastillas/pastilla2.png" alt="Contenido Multimedia" class="mb-4 pastilla-img animate-on-scroll">
+         <h4 class="card-title animate-on-scroll">Contenido Multimedia</h4>
+         <p class="card-text fs-6">Animaciones, video y diseño web en un solo lugar.</p>
+       </div>
+     </div>
+   </a>
+ </div>
+ <!-- Pastilla 3 -->
+ <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 mb-4">
+   <a href="#responsive" class="text-decoration-none">
+     <div class="card bg-dark text-white border-0 h-100 shadow-sm animate-on-scroll">
+       <div class="card-body p-4 text-white">
+         <img src="img/pastillas/pastilla3.png" alt="Responsive" class="mb-4 pastilla-img animate-on-scroll">
+         <h4 class="card-title animate-on-scroll">Responsive</h4>
+         <p class="card-text fs-6">Sitios web que se adaptan a cualquier dispositivo.</p>
+       </div>
+     </div>
+   </a>
+ </div>
+ <!-- Pastilla 4 -->
+ <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 mb-4">
+   <a href="#creatividad" class="text-decoration-none">
+     <div class="card bg-dark text-white border-0 h-100 shadow-sm animate-on-scroll">
+       <div class="card-body p-4 text-white">
+         <img src="img/pastillas/pastilla4.png" alt="Creatividad" class="mb-4 pastilla-img animate-on-scroll">
+         <h4 class="card-title animate-on-scroll">Creatividad</h4>
+         <p class="card-text fs-6">Soluciones creativas para cada proyecto.</p>
+       </div>
+     </div>
+   </a>
+ </div>
+</div>
+    </section>
+
+    <!-- Sección detallada: Diseño único -->
+    <section id="diseno-unico" class="container-fluid my-5 px-4">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4">
+          <h3 class="animate-on-scroll  fw-bold">Diseño único que marca la diferencia</h3>
+          <p class="animate-on-scroll">En Laut Medial entendemos que cada marca tiene su propia personalidad. Por eso, desarrollamos identidades visuales completamente personalizadas que reflejan la esencia de tu negocio.</p>
+          <ul class="animate-on-scroll star-list">
+            <li>Logotipos originales y memorables</li>
+            <li>Paletas de colores estratégicamente seleccionadas</li>
+            <li>Tipografías que comunican tu mensaje</li>
+            <li>Elementos gráficos distintivos</li>
+          </ul>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="img/pastillas/pastilla1.png" alt="Diseño único" class="img-fluid animate-on-scroll" style="max-width: 300px;">
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección detallada: Contenido multimedia -->
+    <section id="contenido-multimedia" class="t py-5">
+      <div class="container-fluid px-4">
+        <div class="row align-items-center">
+          <div class="col-lg-6 text-center order-lg-1">
+            <img src="img/pastillas/pastilla2.png" alt="Contenido multimedia" class="img-fluid animate-on-scroll" style="max-width: 300px;">
+          </div>
+          <div class="col-lg-6 mb-4 order-lg-2 text-dark">
+            <h3 class="animate-on-scroll  fw-bold">Contenido multimedia que impacta</h3>
+            <p class="animate-on-scroll">Creamos experiencias visuales inmersivas que conectan con tu audiencia. Desde animaciones dinámicas hasta videos promocionales que cuentan tu historia.</p>
+            <ul class="animate-on-scroll star-list">
+              <li>Animaciones 2D y 3D profesionales</li>
+              <li>Videos promocionales y corporativos</li>
+              <li>Motion graphics y efectos visuales</li>
+              <li>Contenido interactivo para web</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección detallada: Responsive -->
+    <section id="responsive" class="container-fluid my-5 px-4">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4">
+          <h3 class="animate-on-scroll  fw-bold">Diseño responsive para todos los dispositivos</h3>
+          <p class="animate-on-scroll">En la era digital actual, tu sitio web debe funcionar perfectamente en cualquier dispositivo. Desarrollamos interfaces que se adaptan fluidamente a móviles, tablets y desktop.</p>
+          <ul class="animate-on-scroll star-list">
+            <li>Optimización para móviles y tablets</li>
+            <li>Carga rápida en todos los dispositivos</li>
+            <li>Navegación intuitiva y accesible</li>
+            <li>Compatibilidad cross-browser</li>
+          </ul>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="img/pastillas/pastilla3.png" alt="Responsive" class="img-fluid animate-on-scroll" style="max-width: 300px;">
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección detallada: Creatividad -->
+<section id="creatividad" class="py-5">
+      <div class="container-fluid px-4">
+        <div class="row align-items-center">
+          <div class="col-lg-6 text-center order-lg-1">
+            <img src="img/pastillas/pastilla4.png" alt="Creatividad" class="img-fluid animate-on-scroll" style="max-width: 300px;">
+          </div>
+          <div class="col-lg-6 mb-4 order-lg-2">
+            <h3 class="animate-on-scroll  fw-bold">Creatividad sin límites</h3>
+            <p class="animate-on-scroll">Transformamos ideas en realidades visuales impactantes. Nuestro equipo creativo combina técnica y arte para generar soluciones innovadoras que destacan en el mercado.</p>
+            <ul class="animate-on-scroll star-list">
+              <li>Conceptos originales y disruptivos</li>
+              <li>Investigación de tendencias y mercado</li>
+              <li>Brainstorming colaborativo</li>
+              <li>Iteración constante hasta la perfección</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Integrantes -->
+   <!-- Integrantes -->
+<section id="integrantes" class="container-fluid my-5 px-4">
+  <div class="row justify-content-center">
+    <div class="col-md-6 text-center">
+      <h2 class="mb-4 animate-on-scroll">Nuestro equipo</h2>
+      <img src="img/foto.png" alt="Lautaro Piña" class="rounded-circle img-fluid mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+      <h5>Lautaro Piña</h5>
+      <p>Diseñador Multimedia – Fundador de Laut Medial</p>
+      <div class="redes-sociales mt-3">
+        <a href="https://www.instagram.com/laumedia" target="_blank" class="text-white mx-2">
+          <i class="fab fa-instagram fa-lg"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/laumedia" target="_blank" class="text-white mx-2">
+          <i class="fab fa-linkedin fa-lg"></i>
+        </a>
+        <a href="https://www.youtube.com/@laumedia" target="_blank" class="text-white mx-2">
+          <i class="fab fa-youtube fa-lg"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección de Contacto -->
+<section id="contacto" class="container-fluid my-5 px-4">
+  <div class="row justify-content-center">
+    <div class="col-lg-8 text-center">
+      <h2 class="mb-4 animate-on-scroll">¿Hablamos de tu próximo proyecto?</h2>
+      <p class="animate-on-scroll mb-4">
+        Nos apasiona dar forma a ideas que inspiran. Si estás buscando un equipo que combine diseño, tecnología y creatividad para potenciar tu marca o proyecto, estás en el lugar correcto. Contanos qué tenés en mente y te enviaremos una propuesta personalizada.
+      </p>
+
+      <h3 class="animate-on-scroll mb-4">Contactanos</h3>
+
+      <div class="row justify-content-center">
+        <!-- Botón Email -->
+        <div class="col-md-4 mb-3">
+          <a href="mailto:info@lautmedial.com?subject=Quiero%20empezar%20un%20proyecto&body=Hola, me interesa trabajar con ustedes en un nuevo proyecto. ¿Podemos coordinar una reunión?" 
+             class="btn btn-outline-light btn-lg w-100 animate-on-scroll">
+            <i class="fas fa-envelope me-2"></i>
+            Escribinos
+          </a>
+        </div>
+
+        <!-- Botón WhatsApp -->
+        <div class="col-md-4 mb-3">
+          <a href="https://wa.me/5491234567890?text=¡Hola!%20Estoy%20interesado%20en%20sus%20servicios%20de%20diseño%20multimedia%20y%20me%20gustaría%20charlar%20sobre%20un%20proyecto." 
+             target="_blank" 
+             class="btn btn-success btn-lg w-100 animate-on-scroll">
+            <i class="fab fa-whatsapp me-2"></i>
+            Chateá por WhatsApp
+          </a>
+        </div>
+
+        <!-- Botón Llamar -->
+        <div class="col-md-4 mb-3">
+          <a href="tel:+5491234567890" 
+             class="btn btn-outline-warning btn-lg w-100 animate-on-scroll">
+            <i class="fas fa-phone me-2"></i>
+            Llamanos
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Canvas 3D -->
+    <section id="bloque3d" class="container-fluid text-center px-0 my-5">
+      <h2 class="animate-on-scroll px-4">Cada proyecto es un mundo, y el tuyo esta por comenzar</h2>
+      <div id="canvas3d-wrapper"></div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <p class="mb-1">Carrera: Diseño Multimedial | Materia: Diseño y Programación Web I</p>
+    <p class="mb-1">Turno: Tarde | Comisión: DMM3AV | Docente:Omar Toyos</p>
+    <p class="mb-0">Segundo parcial - Junio 2025</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="banner.js"></script>
+  <script src="interactivo3d.js"></script>
+  <script>
+    const animateOnScroll = () => {
+      const elements = document.querySelectorAll('.animate-on-scroll');
+      elements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        const triggerPoint = window.innerHeight * 0.85;
+        if (rect.top < triggerPoint) {
+          el.classList.add('visible');
+        }
+      });
+    };
+  
+    document.addEventListener('DOMContentLoaded', animateOnScroll);
+    window.addEventListener('scroll', animateOnScroll);
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const elementosAnimar = document.querySelectorAll(".pastilla-img");
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.3 });
+
+      elementosAnimar.forEach(el => observer.observe(el));
+    });
+  </script>
+
+</body>
+</html>
